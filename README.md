@@ -1,8 +1,22 @@
+# Next.js Project
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## 🚀 Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +28,48 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load fonts like [Geist](https://vercel.com/font).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Root Directory**
+- `.vscode/` → Editor-specific settings and extensions.
+- `node_modules/` → Installed dependencies (auto-generated).
+- `public/` → Static assets like images and the `favicon.ico`.
+- `src/` → Core application code (see below).
+- `.env` → Environment variables (not committed to Git).
+- `.gitignore` → Specifies files ignored by Git (e.g., `node_modules`, `next-env.d.ts`, `.env`).
+- `eslint.config.mjs` → ESLint configuration for code linting.
+- `next-env.d.ts` → TypeScript declarations for Next.js (auto-generated, ignored by Git).
+- `next.config.ts` → Next.js configuration settings.
+- `package.json` → Project dependencies, scripts, and metadata.
+- `package-lock.json` → Lockfile to ensure dependency consistency.
+- `postcss.config.mjs` → Configuration for PostCSS (used with Tailwind CSS).
+- `tailwind.config.ts` → Tailwind CSS configuration.
+- `tsconfig.json` → TypeScript configuration.
+- `README.md` → Project documentation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📖 Learn More
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To learn more about Next.js, check out:
+- [📖 Next.js Documentation](https://nextjs.org/docs)
+- [📚 Learn Next.js](https://nextjs.org/learn)
+- [⚙️ Next.js GitHub Repository](https://github.com/vercel/next.js)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Deployment
+
+The easiest way to deploy your Next.js app is via [Vercel](https://vercel.com/):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+
+Check out the [Next.js deployment guide](https://nextjs.org/docs/app/building-your-application/deploying) for details.
