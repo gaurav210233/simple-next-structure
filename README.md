@@ -57,6 +57,25 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ---
 
+
+## Using This Template
+
+If you want to create a new project using this template, follow these steps:
+
+```bash
+# Clone the repository
+git clone --depth=1 https://github.com/gaurav210233/simple-next-structure new-project
+
+# Remove the existing Git history
+cd new-project
+rm -rf .git
+
+# Reinitialize Git
+git init
+git add .
+git commit -m "Initialized new project from template"
+```
+
 ## 📖 Learn More
 
 To learn more about Next.js, check out:
